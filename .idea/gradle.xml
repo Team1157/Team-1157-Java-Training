@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="delegatedBuild" value="false" />
+        <option name="testRunner" value="GRADLE" />
+        <option name="distributionType" value="WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/Intro/Assessment" />
+            <option value="$PROJECT_DIR$/Intro/Comments" />
+            <option value="$PROJECT_DIR$/Intro/Program Structure" />
+            <option value="$PROJECT_DIR$/Intro/Welcome" />
+            <option value="$PROJECT_DIR$/Variables and Types/Booleans" />
+            <option value="$PROJECT_DIR$/Variables and Types/Number Types" />
+            <option value="$PROJECT_DIR$/Variables and Types/Other Operators" />
+            <option value="$PROJECT_DIR$/Variables and Types/Parameters" />
+            <option value="$PROJECT_DIR$/Variables and Types/Strings" />
+            <option value="$PROJECT_DIR$/Variables and Types/Theory" />
+            <option value="$PROJECT_DIR$/util" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

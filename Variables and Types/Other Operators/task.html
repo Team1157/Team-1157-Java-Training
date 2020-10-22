@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+  <style>h1, h2{text-align: center}</style>
+</head>
+<body>
+<h1>Other Operators</h1>
+<p>We've already covered most of the important operators (+, -, *, /, &&, ||, ect.), but there's some that don't fit in the other lessons or have different input and output types. We'll cover some of them now.</p>
+<h2>Assignment Operators</h2>
+<p>You've already seen one assignment operator: <code>=</code>. Assignment operators set the value of a variable. In addition to <code>=</code>, there are several more.</p>
+<pre><code>
+  a += b; // Same as a = a + b
+  a -= b; // Same as a = a - b
+  a *= b; // Same as a = a * b
+  a /= b; // Same as a = a / b
+  a++;    // Same as a += 1 or a = a + 1;
+  a--;    // Same as a -= 1 or a = a - 1;
+</code></pre>
+<p>As you can see, these new assignment operators are just shorthand for commonly used pieces of code.</p>
+<h2>Comparison operators</h2>
+<p>Comparison operators allow you to compare two numbers. They always return a boolean value. The <code>==</code> and <code>!=</code> operators from the last task are comparison operators. Here's the full list:</p>
+<pre><code>
+  a == b // True if a is equal to b
+  a != b // True if a is not equal to b
+  a > b  // True if a is greater than b
+  a < b  // True if a is less than b
+  a >= b // True if a is greater than or equal to b
+  a <= b // True if a is less than or equal to b
+</code></pre>
+<p>Also, you can use parentheses to set the order of operation, similar to algebra</p>
+<pre><code>
+  (true || false) && true // true
+  true || (false && true) // false
+</code></pre>
+<p>For this task, you will be given three integers. Return true is a is the largest, otherwise return false.</p>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+  <style>h1, h2{text-align: center}</style>
+</head>
+<body>
+<h1>Number Types</h1>
+<p>Now that you understand how variables work, let's talk about some of the types of variables in Java. We've already covered integers, but there are many other types of numbers. The main differences are how many bytes of data they hold (and therefore how large and precise the values they can hold are), and whether they can hold decimal numbers. There are the different types of numbers you can use:</p>
+<pre><code>
+  Name  	Size	  Stores
+  byte		1 byte	  whole numbers from -128 to 127
+  short	        2 bytes	  whole numbers from -32,768 to 32,767
+  int	        4 bytes	  whole numbers from -2,147,483,648 to 2,147,483,647
+  long		8 bytes	  whole numbers from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807
+  float		4 bytes	  fractional numbers; sufficient for storing 6 to 7 decimal digits
+  double	8 bytes	  fractional numbers; sufficient for storing 15 decimal digits
+</code></pre>
+<p>For most programs, I just use int for whole numbers and float for decimal numbers. It's not the most memory efficient, but usually the difference in negligible and it makes keeping track of the types of your variables much easier. All of the operations we covered for the int type also work for the other number type.</p>
+<p>When you do an operation with two different types of numbers, generally the output will have the more precise type (the one that uses more memory). For example, an int times a float is a float.</p>
+<p>To convert a variable to a different type, you put the type desired type in parentheses in front of the variable name. This is called type casting.</p>
+<pre><code>
+  int a = 5;
+  float aFloat = (float) a;
+</code></pre>
+<p>Type casting also allows us to divide integers without discarding the fractional component, by converting one of the inputs to a float before we divide. The result of the division will also be a float.</p>
+<p>For this task, you will be given two integers, a and b. Return a divided by b, including the fractional component.</p>
+</body>
+</html>

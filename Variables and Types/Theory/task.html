@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+  <style>h1, h2{text-align: center}</style>
+</head>
+<body>
+<h1>Variables and Types</h1>
+<p>Ok, so now you know how to output something from your program. But a program that always outputs the same thing isn't very useful. To create more interesting programs, we need to talk about variables.</p>
+<p>Like a variable in algebra, a Java variable can have many different values, and its value can change throughout the program. Let's look at how variables are created:</p>
+<pre><code>
+  // Declares an integer variable named "a" and sets its value to 10
+  int a = 10;
+</code></pre>
+<p>When you create a variable in Java, you must give it a type. This variable is type "int", which stands for integer. There are many other types of variables, which we will cover later in this lesson. After the variable type is the name of the variable. A variable name can be a single character, a word, or multiple words, like <code>applesEaten</code>. Finally, you use an equal sign to give the variable its initial value, in this case 10.</p>
+<p>Once a variable has been declared, you can change it's value with the equals sign: <code>a = 5</code>. You only need to set the variable type when it's created. You can also use the values of variables to do math:</p>
+<pre><code>
+  int a = 10; // Declares an  variable named "a" and sets it to 10
+  a = 6; // Change the value to 6
+
+  int b = 8; // Create a second variable "b"
+  int c = a + b // c is 14
+
+  return c * 2 // Outputs 28
+</code></pre>
+Here are the operations Java supports:
+<pre><code>
+  return 3 + 4 // Addition. Returns 7.
+  return 3 - 4 // Subtraction. Returns -1.
+  return 3 * 4 // Multiplication. Returns 12.
+  return 3 / 4 // Integer Division. Returns 1.
+  /* WARNING: Because both of the inputs are integers,
+  your output is going to be an integer too. That means
+  any fractional component will be ignored (rounded down)
+  We will go over how to use decimal variables later. */
+
+  return 10 % 3 // Remainder. Returns 2. a % b will find the
+                // remainder of a / b.
+</code></pre>
+Java does support other mathematical operations, like exponents and square roots, but we'll get to them later. Do some experimenting with variables and operations before you move on to the next task. You can run your program and see what it outputs by pressing "Run".
+
+</body>
+</html>

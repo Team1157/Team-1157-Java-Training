@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+  <style>h1, h2{text-align: center}</style>
+</head>
+<body>
+<h1>Strings</h1>
+<p>Numbers are not the only thing variables can represent. One common type of variable is the <code>String</code>. A String is a sequence of characters, like a word, url, or password. Strings can be defined using quote marks:</p>
+<pre><code>
+  String hello = "Hello";
+</code></pre>
+<p>By far the most common operation done with strings is called concatenation, which just means joining two strings together. Concatenation is done with the <code>+</code> operator.</p>
+<pre><code>
+  String str1 = "Hello";
+  String str2 = "World";
+  String str3 = str1 + str2; // str3 = "HelloWorld"
+</code></pre>
+<p>You can also concatenate strings with other types of variables, like ints, and they will be automatically converted to strings first.</p>
+<pre><code>
+  String str1 = "Hello" + 5; // "Hello5"
+  String str2 = "1" + 2; // "12"
+  String str3 = 1 + "2"; // "12"
+</code></pre>
+<p>For this task, your program should take a name as input and return "Hello &lt;name&gt;!". For example, if the input was "John", you should output "Hello John!".</p>
+</body>
+</html>
