@@ -1,0 +1,5 @@
+.gradle/
+.coursecreator/
+template.html
+template.java
+test_template.java
