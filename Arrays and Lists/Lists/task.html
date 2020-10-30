@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+  <style>h1, h2{text-align: center}</style>
+</head>
+<body>
+<h1>Lists</h1>
+<p>Sometimes, the fixed length of an array is inconvenient. For example, if you were making a todo list program, and you used an array to represent the list of todos, you would have to make an entirely new array. Fortunately, Java has something called an ArrayList. ArrayLists are similar to arrays, but they allow elements to be added and removed. Here's how to create an ArrayList:</p>
+<pre><code>
+  import java.util.ArrayList;
+
+  ArrayList&lt;Integer&gt; myList = new ArrayList<>();
+</code></pre>
+<p>This syntax is quite different from arrays, so let's take it bit by bit. First of all, if you want to use array lists in your program, you need to have an <code>import</code> statement at the very top of your program file. This tells java where to look for the "ArrayList" file. The actual "ArrayList" file is built into Java itself, but you can import other files, including ones that you write yourself. That will be covered in another lesson.</p>
+<p>Next, we have the variable type <code>ArrayList&lt;Integer&gt;</code>. In this case, the overall variable type is <code>ArrayList</code> and the type of variable the list holds is <code>Integer</code>. Because of some limitation of Java that I don't understand very well myself, ArrayLists (and other imported things) can't hold the "primitive" variable types (the ones that start with a lowercase letter). Instead, we use these substitutions:</p>
+<pre>
+  int -> Integer
+  float -> Float
+  bool -> Boolean
+  String -> String (Strings aren't primitives)
+</pre>
+<p>There's a bit more to it than that, and "int" and "Integer" aren't exactly the same, but that's all you need to know to use ArrayLists.</p>
+<p>ArrayLists are definitely a bit more complicated than the other types we've covered so far, but if you learn the syntax for ArrayLists now, it will serve you well later, as every other "object" in Java follows the same pattern, and being an object oriented language, Java is all about objects.</p>
+
+</body>
+</html>
