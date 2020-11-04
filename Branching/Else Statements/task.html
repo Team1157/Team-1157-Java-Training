@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+  <style>h1, h2{text-align: center}</style>
+</head>
+<body>
+<h1>Else Statements</h1>
+<p>An else statement can be added to an if statement to run a separate block of code only when the if statement's block does not run. An else statement goes directly after the closing brace of the if statement it's related to:</p>
+<pre><code>
+  if (a > 10) {
+      // This is run if a is greater than 10
+  } else {
+     // This is run if the previous block did not run (a <= 10)
+  }
+</code></pre>
+<p>Else statements are mostly just a convenient way to create two if statements at the same time. For example, these two programs do the same thing:</p>
+<pre><code>
+  // Option 1
+  if (condition) {
+      String s = "Condition is true";
+  }
+  if (!condition) { // !condition is the opposite of condition
+      String s = "Condition is false";
+  }
+
+  // Option 2
+  if (condition) {
+      String s = "Condition is true";
+  } else {
+      String s = "Condition is false";
+  }
+</code></pre>
+<p>If and else statements can also be chained together to form a series of blocks, only one of which will be executed. The first condition to be met will have its block executed, and the rest will be skipped. This can be useful when you need to check a lot of mutually exclusive conditions.</p>
+<pre><code>
+  Sting nAsWord; // The value of nAsWord will default to an empty string
+  /*
+  It's usually a good idea to create a variable you intend to assign
+  before the if statement. I'll explain why in the lesson on Scope.
+  */
+  if (n == 1) {
+      nAsWord = "one";
+  } else if (n == 2) {
+      nAsWord = "two";
+  } else if (n == 3) {
+      nAsWord = "three";
+  } else if (n == 4) {
+      nAsWord = "four";
+  } else {
+      nAsWord = "n not recognized";
+  }
+</code></pre>
+<p>It's true that all of these could be if statements and not else if statements, because all of the conditions are mutually exclusive, but note that if n == 1, only the first condition will have to be checked, the the program will jump to the end of all of the if else block. With more complex conditions, using if else statements instead of ifs alone could make the program much faster to run.</p>
+
+</body>
+</html>

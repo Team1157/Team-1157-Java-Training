@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+  <style>h1, h2{text-align: center}</style>
+</head>
+<body>
+<h1>If Statements</h1>
+<p>Sometimes, you only want to run a part of your code under certain conditions. For example, you might have a boolean variable to keep track of whether a motor's direction should be reversed. If the motor is reversed, the speed sent to the motor should be negative. To do this, you would use an if statement.</p>
+<pre><code>
+  float speed = 0.5; // The target speed of the motor
+  float isReversed = true; // The motor should be reversed
+
+  if (isReversed) {
+      /*
+      The code between these curly braces will be run only
+      if the condition (isReversed) is true
+      */
+      speed = -speed // Multiply the speed by -1
+  }
+</code></pre>
+<p>An the code between the opening curly brace <code>{</code> and its corresponding closing brace <code>}</code> will only be executed if the condition is true. The condition, which goes in the parentheses after "if", can be anything which evaluates to a boolean value. For example:</p>
+<pre><code>
+  // All of these are valid
+  if (timeLeft < 60) { ... }
+  if (currentDepth >= 5 && currentPressure > 100) { ... }
+  if (1 + 1 == 2) { ... }
+  if (motorSpeeds[0] == 0) { ... }
+
+  // These are not valid
+  if (5 + 4) { ... } // 5 + 4 is an int, not a bool
+  if (robotName) // Not valid unless robotName is a boolean variable
+</code></pre>
+This is probably a good time to point out that you can chain operators together to create complex expressions, and you can use parentheses to control the order of operations. For example, this is valid Java, but it's very verbose:
+<pre><code>
+  int sum = a + b
+  int product = a * b
+  bool sumIsGreater = sum > product
+  if (sumIsGreater) { ... }
+</code></pre>
+<p>The above could be rewritten much more concisely as this:</p>
+<pre><code>
+  if ((a + b) > (a * b)) { ... }
+</code></pre>
+<p>While it's helpful to be concise, there are also times when it makes you program more readable not to put everything on one line. In general,  if a line is longer than 120 characters, you should break it up into multiple lines of code.</p>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+  <style>h1, h2{text-align: center}</style>
+</head>
+<body>
+<h1>Variable Scope</h1>
+<p>I mentioned in the last theory task that it's sometimes necessary to declare variables outside of an if block (a block of code is any number statements enclosed by a set of curly braces). To see why, let's look at an example where we declared our variable inside the block.</p>
+<pre><code>
+  public String solution(boolean condition) {
+      if (condition) {
+          int n = 100;
+      }
+      return n;
+  }
+</code></pre>
+<p>Now, think about what would happen if <code>condition</code> is false. The if statement would not run its block of code, so <code>n</code> would never be assigned a value. When the return statement is reached, there would be no variable named <code>n</code> to return.</p>
+<p>To avoid problems like this, any variable declared inside a block cannot be used outside that block. Once the program reaches the closing brace, all of the variables declared in its corresponding block are deleted. The block a variable is in is called the scope of that variable. If you tried running the above program, you would get an error message saying "Cannot resolve symbol 'n'", meaning there is no variable with that name. So what can we do to fix that?</p>
+<pre><code>
+  public String solution(boolean condition) {
+      String n;
+      if (condition) {
+          n = 100;
+      }
+      return n;
+  }
+</code></pre>
+<p>Now that <code>n</code> is declared in the outer block which the if statement is part of, it is not it can be accessed outside of the if statement. When you declare a variable without assigning it a value, as is done here, it will be set to some default value, depending on the variable type: the number types default to 0 and booleans default to false. So if <code>condition</code> is false, the program will return 0. However, relying on these default values is generally bad practice. You should only declare a variable without initializing it (assigning it a value) when you are sure it will be assigned to a value before it is read by anything. In this program, it would be more correct to add and <code>else</code> statement that explicitly sets <code>n</code> to 0.</p>
+</body>
+</html>

@@ -8,4 +8,3 @@ To get started with this course, follow these steps:
 1. In IntelliJ go to "Get From Version Control". Choose Github. You will need to provide your GitHub credentials (or an access token). Copy and paste this repository's url into the "url" field and choose "clone".
 1. Once the course had been downloaded, got to File->Project Structure. Select the "SDKs" tab under "Platform Settings". If no SDKs are listed, click the "+" button to add one. Choose "Download JDK". You can leave all the options at their defaults, just press "Download".
 1. Once the JDK has finished downloading, you should be ready to start. If you have any issues, contact us on the team Discord server, or email [1157landsharksrobotics@gmail.com](mailto:1157landsharksrobotics@gmail.com).
-  
