@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+  <style>h1, h2{text-align: center}</style>
+</head>
+<body>
+<h1>While Loops</h1>
+<p>Besides if/else statements, the other simplest type of flow control is the loop. Java has many types of loops, but they all have something in common: they execute the same block of code many times.</p>
+<p>The first type of loop we'll be covering about is while loop. This is what a while loops looks like:</p>
+<pre><code>
+  while (condition) {
+      // Do stuff
+      System.out.println("Hi"); // Output "Hi" to the console
+  }
+</code></pre>
+<p>Like if statements, while loops have a boolean condition. A while loop will check the condition, then run the block of code once. When the block finishes, the condition will be checked again. As long as the condition is still true, the block of code is run again. This repeats until something updates the condition. For example:</p>
+<pre><code>
+  int i = 10;
+  while (i > 0) {
+      System.out.println(i); // This is run once for each i
+      i--; // Same as i = i - 1;
+  }
+  System.out.println("Blastoff!");
+</code></pre>
+<p>This shorter program will output every number from 10 to 1, and then finally output "Blastoff!". The block of code will keep running until i get to 0, which makes the condition (<code>i > 0</code>) false. At that point, the program will jump to the end of the block of code, and the last print statement will be executed. It's common practice to use the variable <code>i</code> for the temporary variable used in a loop, short for "iterator".</p>
+<p>One thing to watch our for when working with loops is the accidental creation of infinite loops. If the condition can never become false, the loop will never end, which "freezes" the program. For example:</p>
+<pre><code>
+  int i = 10;
+  while (i > 0) {
+      System.println(i);
+  }
+</code></pre>
+<p>In this program, the programmer forgot to change <code>i</code> in the block of code. Since <code>i</code> never changes, the condition will never be false, and the loop will never end. This program will just keep outputting <code>10</code> forever. As a general rule, the variable your condition depends upon should always be updated somewhere in the loop.</p>
+</body>
+</html>
