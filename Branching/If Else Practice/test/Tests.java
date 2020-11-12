@@ -23,11 +23,11 @@ public class Tests {
   }
 
   Object[][] valuesToCheck = {
-          new Object[]{0.05},
-          new Object[]{0.8},
-          new Object[]{0.35},
-          new Object[]{0.56},
-          new Object[]{0.49},
+          new Object[]{0.05f},
+          new Object[]{0.8f},
+          new Object[]{0.35f},
+          new Object[]{0.56f},
+          new Object[]{0.49f},
   };
 
   public Object[] objectToArray(Object o) {

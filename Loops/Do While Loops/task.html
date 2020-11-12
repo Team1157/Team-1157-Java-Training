@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+  <style>h1, h2{text-align: center}</style>
+</head>
+<body>
+<h1>Do While Loops</h1>
+<p>There's another variation of the while loop that is somewhat important, the do while loop. It used significantly less frequently, but you might come across one and want to be able to understand what it does. This is what a do while loop look like:</p>
+<pre><code>
+  do {
+      // Do stuff
+  } while (condition);
+</code></pre>
+<p>The only difference between while loops and do while loops is that the block will always be executed at least once. The most common use for do while loops I've seen is to attempt some task, then if the task fails or the result is incorrect, repeat it, and keep repeating it until it succeeds. For example:</p>
+<pre><code>
+  float a;
+  do {
+      a = (float) Math.random(); // Get a random float from 0 to 1
+  } while (a < 0.5);
+</code></pre>
+<p>This program will set i to a random number between 0.5 and 1. If the number is less than 0.5, it will set i to a new random number until the condition is met. Note that this is really not the correct way to generate a number in that range, it's just an example. Again, do while loops aren't used much, but it's good to be aware they exist.</p>
+</body>
+</html>

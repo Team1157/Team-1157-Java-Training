@@ -14,11 +14,11 @@ public class Tests {
     }
 
     Object[][] valuesToCheck = {
-            new Object[]{3, 1, 10},
-            new Object[]{-4, 1, 10},
-            new Object[]{22, 1, 10},
-            new Object[]{3, 10, 16},
-            new Object[]{-6, -10, 0},
+            new Object[]{3},
+            new Object[]{-4},
+            new Object[]{22},
+            new Object[]{3},
+            new Object[]{-6},
     };
 
     public Object[] objectToArray(Object o) {
