@@ -69,7 +69,18 @@ public class Tests {
                         solutionMethod.invoke(null, inputArr)
                 );
             } catch (IllegalAccessException | InvocationTargetException e) {
-                Assert.fail("Exception in test handling\n" + Arrays.toString(e.getStackTrace()));
+                java.lang.StackTraceElement element = null;
+                for (java.lang.StackTraceElement el : e.getCause().getStackTrace()) {
+                    if (el.getClassName().equals("Task")) {
+                        element = el;
+                        break;
+                    }
+                }
+                if (element == null) {
+                    Assert.fail("Your program threw an exception:\n" + e.getCause().toString() + "\nbut the line number could not be determined");
+                } else {
+                    Assert.fail("Your program threw an exception:\n" + e.getCause().toString() + "\non line " + element.getLineNumber());
+                }
             }
         }
     }
