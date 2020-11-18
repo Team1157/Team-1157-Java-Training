@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+  <style>h1, h2{text-align: center}</style>
+</head>
+<body>
+<h1>For Loops</h1>
+<p>For loops are probably the most commonly used loops in Java. A for loop runs a block of code several times, each time setting a certain variable to a new value. Here's what they look like:</p>
+<pre><code>
+  for(int i = 0; i < 10; i++) {
+      // Body of the loop
+      System.out.println(i);
+  }
+</code></pre>
+<p>The four loop has three separate statements in the parentheses, each separated by a semicolon. The first (<code>int i = 0</code> in this case) is run right before the loop's block is run for the first time. The second (<code>i < 10</code>) is actually a condition, which tells the loop when to stop, just like a while loop. The third statement (<code>i++</code>) is run each time the block of code finishes. Note that we do not need a semicolon after the third statement. Really, for loops are just while loops in disguise, as and for loops can be written as a while loop. For example, the above for loop is equivalent to:</p>
+<pre><code>
+  int i = 0;
+  while (i < 10) {
+      // Body of the loop
+      System.out.println(i);
+
+      i++;
+  }
+</code></pre>
+<p>The vast majority of for loops are used to cycle through a range of integers, as in the example above, especially when those integers are the indices of an array or array list. Since this is so common, here's a quick example of what that looks like:</p>
+<pre><code>
+  int[] arr = {5, 2, 4};
+  for(int i = 0; i < arr.length; i++) {
+      System.out.println(arr[i]);
+  }
+</code></pre>
+<p>That program will print each element of an array on its own line.</p>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+  <style>h1, h2{text-align: center}</style>
+</head>
+<body>
+<h1>The Break Statement</h1>
+<p>Sometimes, it makes sense to exit a loop prematurely, before the condition has been met. For example, let's say you want to check if an array has an 0s in it. Here's one way to do that:</p>
+<pre><code>
+  public boolean hasZero(int[] arr) {
+      boolean zeroFound = false;
+
+      for(int element : arr) {
+          if (element == 0) {
+              zeroFound = true;
+          }
+      }
+      return zeroFound;
+  }
+  return zeroFound;
+</code></pre>
+<p>This program runs thorough every element of the array and checks if it's equal to 0. If it is, it will take not by setting a variable to true. However, it's a bit inefficient. Consider the case in which the first element is 0. Even though we know the program is going to return true, it will check every other element in the array anyways. This might not be a problem for small arrays, but with a very large array or a more complex condition than <code>element == 0</code>, the program might take significantly longer to run. To fix this, you could use the <code>break</code> statement. When the break statement is executed, it will immediately jump to the end of whatever loop it's in, without checking the loop's condition. This is what our program looks like with a break statement:</p>
+
+<pre><code>
+  public boolean hasZero(int[] arr) {
+      boolean zeroFound = false;
+
+      for(int element : arr) {
+          if (element == 0) {
+              zeroFound = true;
+              break;
+          }
+      }
+      return zeroFound;
+  }
+</code></pre>
+<p>Now when an element is found to be equal to 0, the loop will exit immediately and not have to check the other elements. Note: there is a cutally an even better way to solve the issue in this case, utilizing multiple return statements. Can you see what it is?</p>
+</body>
+</html>
