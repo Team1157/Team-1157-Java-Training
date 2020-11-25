@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+  <style>h1, h2{text-align: center}</style>
+</head>
+<body>
+<h1>Console Input</h1>
+<p>Note: The example code in this lesson will not work if you use the run button in the task description. Instead, click the little green play button (triangle) just to the left of line 3, or press ctr+shift+f10.</p>
+<p>So far in this course, input to your program has come only from the solution checker. But if you want to work on projects outside of this course, you may want to be able to get user input while the program is running. The most basic way to get user input is to use the console. You can read the text a user types into the console while your program, or what is typed into the terminal if you run your program from the command line. Here's what that looks like:</p>
+<pre><code>
+  import java.util.Scanner;
+
+  public class Main {
+      public static void main(String[] args) {
+          Scanner scanner = new Scanner(System.in);
+
+          System.out.print("> ");
+          String inputString = scanner.nextLine();
+          System.out.println("You entered: " + inputString);
+      }
+  }
+</code></pre>
+<p>Like the import statement for ArrayLists, you must include <code>import java.util.Scanner;</code> at the top of your file (If you have multiple input statements, order does not matter). The first line in the main code block creates a new object called <code>scanner</code>. You only need to do this once, even if you want to get input from the user multiple times. Once you have created the scanner object, you can use a variety of methods (like <code>scanner.nextLine</code>) to read different types of user input from the console. Therse are the different methods you can use:</p>
+<pre><code>
+   Method        |   Variable type
+  ----------------------------------
+   nextLine()    |   String
+   nextInt()     |   int
+   nextFloat()   |   float
+   nextBoolean() |   boolean
+</code></pre>
+<p>If the user enters something that doesn't correspond to the variable type of the method you're using, (like if you use nextInt() but the user enters "hello"), the program will throw an exception (exceptions are similar to errors).</p>
+</body>
+</html>
