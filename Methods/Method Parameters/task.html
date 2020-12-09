@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+  <style>h1, h2{text-align: center}</style>
+</head>
+<body>
+<h1>Method Parameters</h1>
+<p>Right now, our methods have the same problem we were having way back in the "Parameters" task from Variables and Types: our methods don't have any inputs, so they can only ever do one thing. Perhaps not surprisingly, the solution is the same: parameters. Just as the <code>solution</code> method can take parameters during the programing tasks, so too can the methods you define.</p>
+<pre><code>
+  static void print5Times(string message) {
+      for(int i = 0; i < 5; i++) {
+          System.out.println(message);
+      }
+  }
+</code></pre>
+<p>The type and name of the parameters go in the parentheses after the name of the method. If you want multiple parameters, they are separated by commas.</p>
+<p>If a method has parameters, you must provide values for those parameters when you call it. That is done by putting the values in the parentheses after the method name, in the same order as you put them in the method's declaration.</p>
+<pre><code>
+  static void main(String[] args) {
+      print5Times("I'll get printed 5 times!");
+      print5Times("So will I.");
+  }
+</code></pre>
+<p>Parameters can allow you to combine many similar but slightly different blocks of code into one method.</p>
+
+</body>
+</html>

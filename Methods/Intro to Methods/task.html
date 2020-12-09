@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+  <style>h1, h2{text-align: center}</style>
+</head>
+<body>
+<h1>Intro to Methods</h1>
+<p>Sometimes, you want to use the same block of code multiple times, at different places in your program. Methods, similar to the functions of other programming languages, can be used to insert a block of code wherever it's needed in your program. Here's what a method looks like:</p>
+<pre><code>
+  public class Main {
+      // New method:
+      static void exampleMethod() {
+          System.out.println("I'm in a method!");
+      }
+
+      public static void main(String[] args) {
+          // This is where you normally write your code
+      }
+  }
+</code></pre>
+<p>The <code>main</code> at the bottom and its code block is the same thing from all the theory lessons, where your code is run, but what do the other parts mean? <code>static</code> means that the method is part of the class itself and not an object of a class (we'll learn about classes and objects later). <code>void</code> means the method does not return anything (we'll learn about return types later in this lesson). <code>exampleMethod</code> is the name of the method, and can be more or less anything you want.</p>
+<p>You may have noticed that the new method "exampleMethod" looks very similar to the "main" block of code you've been writing your code in during all of the theory lessons. That's because <code>main</code> is a method! So is <code>solution</code> in the programming tasks. Almost all of the code you write in Java is inside some sort of method.</p>
+
+<p>So now we've defined <code>exampleMethod</code>, but by default it won't actually run, since it's not inside the <code>main</code> method where you normally write your code. To actually run the code in your method you have to <em>call</em> it. You call a method using the name you gave it:</p>
+<pre><code>
+  public class Main {
+      // Define exampleMethod:
+      static void exampleMethod() {
+          System.out.println("I'm in a method!");
+      }
+
+      public static void main(String[] args) {
+          // Only the code in this block is actually run by default
+
+          // Call exampleMethod
+          exampleMethod();
+      }
+  }
+</code></pre>
+<p>To call a method, just put parentheses after the method's name (and a semicolon to end the statement). When the program reaches this statement, it will jump to the method's block of code. Once that block has finished, the program will jump back to where it was before the call, and continue running. You can call the same method as many times as you want, from anywhere in your program. The above example will print "I'm in a method!" once and then end.</p>
+<p>So, why do we use methods at all? If you want your program to print the same thing in different places, wouldn't it be easier to just copy and paste the print statement? Maybe, but if the method's block of code were much longer, it would make your program much longer than it needs to be. Even more importantly, if you copied and pasted the same bit of code many times, and then you need to change it (maybe you want to remove the exclamation point from <code>"I'm in a method!"</code>), you would have to go find every place you pasted the code and change it, which would be slow and error prone. If you use a method though, you only have to change it in one place.</p>
+<p>Methods can be confusing at first. Here's some other places you can read about them, and of course you can ask me questions on the Discord server.</p>
+<ul>
+  <li><a href="https://www.w3schools.com/java/java_methods.asp">w3schools.com/java/java_methods.asp</a></li>
+  <li><a href="https://www.tutorialspoint.com/java/java_methods.htm">tutorialspoint.com/java/java_methods.htm</a></li>
+</ul>
+
+</body>
+</html>
